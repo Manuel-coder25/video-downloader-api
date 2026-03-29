@@ -31,3 +31,10 @@ app.get("/download", (req, res) => {
 
     res.json({ download: stdout.trim() });
   });
+}); // ← MISSING: This closes app.get("/download", ...)
+
+// ← MISSING: Server startup code
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});

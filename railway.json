@@ -1,8 +1,22 @@
 {
   "build": {
-    "builder": "NIXPACKS"
+    "builder": "NIXPACKS",
+    "nixpacksPlan": {
+      "phases": {
+        "setup": {
+          "nixPkgs": ["python3", "ffmpeg", "curl"]
+        },
+        "build": {
+          "cmds": [
+            "curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o yt-dlp",
+            "chmod +x yt-dlp"
+          ]
+        }
+      }
+    }
   },
   "deploy": {
     "startCommand": "node server.js"
   }
 }
+

@@ -13,7 +13,7 @@ app.get("/download", (req, res) => {
   }
 
   // Using yt-dlp to get video link
-  exec(`yt-dlp -f best -g "${url}"`, (err, stdout) => {
+  exec(`./yt-dlp -f best -g "${url}"`, ... (err, stdout) => {
     if (err) {
       return res.json({ error: "Failed to fetch video" });
     }

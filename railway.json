@@ -1,8 +1,12 @@
 {
-  "build": {
-    "builder": "DOCKERFILE"
+  "start": "node index.js",
+  "env": {
+    "COOKIE_PATH": "cookies.txt",
+    "PORT": "3000"
   },
-  "deploy": {
-    "startCommand": "node server.js"
+  "build": {
+    "packages": [
+      "nodejs"
+    ]
   }
 }

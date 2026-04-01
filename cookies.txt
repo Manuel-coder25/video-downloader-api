@@ -1,0 +1,3 @@
+const CONFIG = {
+  COOKIES_PATH: path.join(__dirname, "cookies.txt")
+};

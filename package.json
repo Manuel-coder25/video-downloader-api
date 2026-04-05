@@ -1,13 +1,12 @@
 {
-  "name": "yt-dlp-app",
+  "name": "clean-node-app",
   "version": "1.0.0",
-  "description": "A simple Node app using yt-dlp-exec",
+  "description": "A clean Node app without yt-dlp",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "yt-dlp-exec": "^2.2.0",
     "express": "^4.18.2"
   },
   "engines": {

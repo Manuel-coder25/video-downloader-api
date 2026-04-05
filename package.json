@@ -1,18 +1,18 @@
 {
-  "name": "video-downloader-server",
+  "name": "yt-dlp-app",
   "version": "1.0.0",
-  "description": "Multi-platform video downloader (YouTube, TikTok, Instagram, Facebook, Twitter/X)",
+  "description": "A simple Node app using yt-dlp-exec",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "echo \"No build step needed\""
+    "start": "node index.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "yt-dlp-exec": "2.3.0"
+    "yt-dlp-exec": "^2.2.0",
+    "express": "^4.18.2"
   },
   "engines": {
-    "node": ">=18"
-  }
+    "node": ">=18.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
